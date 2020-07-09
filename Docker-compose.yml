@@ -1,0 +1,12 @@
+version: '3'
+services:
+    nagios:
+        image: jasonrivers/nagios:latest
+        container_name: nagios
+        restart: always
+        ports:
+          - 8080:80
+        volumes:
+          - ./config/nagios/etc/:/opt/nagios/etc/
+          - ./config/nagios/var/:/opt/nagios/var/
+          - ./config/apache2/nagios.conf:/etc/apache2/sites-available/nagios.conf
