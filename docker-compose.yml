@@ -8,9 +8,4 @@ services:
           - 9090:80
         volumes:
           - ./config/nagios/etc/:/opt/nagios/etc/
-<<<<<<< HEAD:Docker-compose.yml
           - ./config/apache2/nagios.conf:/etc/apache2/sites-available/nagios.conf
-=======
-          - ./config/nagios/var/:/opt/nagios/var/
-          - ./config/apache2/nagios.conf:/etc/apache2/sites-available/nagios.conf
->>>>>>> 5efd66daaaad314cafce15e4b1d1c252d2a5524b:docker-compose.yml
