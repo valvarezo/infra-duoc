@@ -8,5 +8,4 @@ services:
           - 9090:80
         volumes:
           - ./config/nagios/etc/:/opt/nagios/etc/
-          - ./config/nagios/var/:/opt/nagios/var/
           - ./config/apache2/nagios.conf:/etc/apache2/sites-available/nagios.conf
