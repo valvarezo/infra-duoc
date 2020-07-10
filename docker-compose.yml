@@ -3,6 +3,8 @@ services:
     nagios:
         image: jasonrivers/nagios:latest
         container_name: nagios
+        tags:
+          - valvarezo/infra-duoc
         restart: always
         ports:
           - 9090:80
