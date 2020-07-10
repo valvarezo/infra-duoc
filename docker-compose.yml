@@ -2,7 +2,7 @@ version: '3'
 services:
     nagios:
         image: jasonrivers/nagios:latest
-        container_name: valvarezo/nagios
+        container_name: nagios
         restart: always
         ports:
           - 9090:80
